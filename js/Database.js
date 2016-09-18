@@ -1,5 +1,6 @@
 //This is a sample Course class
 
+<<<<<<< HEAD
 function Course (name, description, difficulty, credit) {
     this.name = name;
     this.description = description;
@@ -7,6 +8,13 @@ function Course (name, description, difficulty, credit) {
     this.credit = credit;
     this.taken = false;
     //this.prerequisites = [];
+=======
+function Course (name, difficulty) {
+    this.name = name;
+    this.difficulty = difficulty;
+    this.taken = false;
+	this.prerequisites = [];
+>>>>>>> origin/master
 }
 
 Course.prototype = {
@@ -28,6 +36,7 @@ Course.prototype = {
 	}
 };
 
+<<<<<<< HEAD
 var courseCatalog = [
 	new Course ("CS 100: Computer Science Seminar", "Orientation to the University experience and the computer science program. An overview of computer science and the history of computing.", 1, 1),
 	new Course ("CS 170: Introduction to Computer Science I", "Introduction to key ideas of computing and programming. Basic concepts, variables, functions, loops, algorithms, data types, graphics. Brief introduction to computing ideas such as data representation, hardware, operating systems, information systems, artificial intelligence, networks, and the world wide web. ", 4, 4),
@@ -83,6 +92,48 @@ var courseCatalog = [
 	new Course ("AGSC 100: Food, Agriculture, and the Environment", "A multidisciplinary study of the structure and function of agricultural systems and of their impact on society and the environment. Includes laboratory.", 2, 3),
 	new Course ("POL 171: Introduction to Political Science", "An overview of basic concepts, principles, approaches and methods of the discipline representing the social scientific mode of inquiry. Exposes the student to national, comparative, and international politics as well as political thought.", 4, 3),
 	new Course ("PSYC 166: General Psychology", "A survey of behavioral principles. Topics include human development, personality, learning and thinking, psychological testing, mental health, therapy, and social behavior.", 5, 3)
+=======
+var courseList = [
+	new Course ("CS 100: Computer Science Seminar", 1, 1),
+	new Course ("CS 170: Introduction to Computer Science I", 4),
+	new Course ("CS 172: Ada Fundamentals", 3, 1),
+	new Course ("CS 180: Foundations of Computer Science I", 4, 4),
+	new Course ("CS 181: Foundations of Computer Science II", 5, 3),
+	new Course ("CS 191: Computing Structures", 5, 3),
+	new Course ("CS 250: Systems Programming", 5, 3),
+	new Course ("CS 291: Models of Computation", 6, 3),
+	new Course ("CS 310: Data Structures and Algorithms", 10, 3),
+	new Course ("CS 315: Internet Programming", 6, 3),
+	new Course ("CS 325: Introduction to Bioinformatics", 7, 3),
+	new Course ("CS 330: Computer Architecture and Organization", 8, 3),
+	new Course ("CS 345: Cyberethics", 6, 3),
+	new Course ("CS 370: Software Engineering", 7, 3),
+	new Course ("CS 380: Programming Languages", 8, 3),
+	new Course ("CS 390: Operating Systems", 8, 3),
+	new Course ("CS 420: Compilers", 9, 3),
+	new Course ("CS 430: Database Systems", 7, 3),
+	new Course ("CS 435: Parallel and Distributed Processing", 9, 3),
+	new Course ("CS 460: Computer Graphics", 7, 3),
+	new Course ("CS 470: Computer Networks", 7, 3),
+	new Course ("CS 480: Artificial Intelligence", 7, 3),
+	new Course ("CS 490: Automata Theory and Formal Languages", 7, 3),
+	new Course ("CS 495: Senior Computer Science Seminar", 7, 1),
+	new Course ("Writing as Critical Thinking", 4),
+	new Course ("Public Speaking", 3, 3),
+	new Course ("Statistics", 5, 3),
+	new Course ("Health & Fitness", 2, 3),
+	new Course ("Foreign Language", 5, 3),
+	new Course ("JINS", 7, 3),
+	new Course ("Intercultural", 5, 3),
+	new Course ("Missouri Statute", 4, 3),
+	new Course ("Literature", 5, 3),
+	new Course ("Visual & Performance Arts", 3, 3),
+	new Course ("Philosophy & Religion", 4, 3),
+	new Course ("Math", 6, 3),
+	new Course ("Physical Science", 5, 3),
+	new Course ("Life Science", 5, 3),
+	new Course ("Social Science", 4,3 )
+>>>>>>> origin/master
 ];
 
 //for (i = 0; i < courseList; i++) { 
