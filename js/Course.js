@@ -1,30 +1,12 @@
 /**
  * Created by khoale on 9/17/16.
  */
-<<<<<<< HEAD
-=======
 // this is the Course Selection for Freshmen CS major
 
->>>>>>> origin/master
 $(document).ready(function () {
     var CS100 = new Course('CS100', 'easy', 1, false);
     var CS310 = new Course('CS310', 'Challenging', 8, false);
 
-<<<<<<< HEAD
-    var courseCatalog = new Array(0);
-    courseCatalog.push(CS100);
-    courseCatalog.push(CS310);
-
-
-    $("#cs310").data("level", 8);
-    $("#cs260").data("level", 3);
-    var a = $("#cs310").data().level;
-    var b = $("#cs260").data().level;
-    // window.alert(a+b);
-    var count = 7;
-    var courseAdded = new Array(0);
-
-=======
     var freshmanFall = [
         ['Class', 'Difficulty'], ['CS 100', 1], ['MATH 198', 4]
     ];
@@ -96,7 +78,6 @@ $(document).ready(function () {
 
     // add the required courses for freshmen
     var i = 0;
->>>>>>> origin/master
     dragProcess();
 
     function dragProcess(){
@@ -106,34 +87,6 @@ $(document).ready(function () {
                 // alert($(event.relatedTarget)).data();
                 // var number = ui.item.index();
                 var n = ui.item.data("level");
-<<<<<<< HEAD
-                count+=n;
-                $("#totalScore").text(count);
-            }
-        });
-
-        // $("#sortable1").sortable({
-        //     update: function (event, ui) {
-        //         var n = ui.item.data("level");
-        //         // ui.item.data("level", 100);
-        //         // var n = ui.item.data("level");
-        //         count-=n;
-        //         $("#totalScore").text(count);
-        //     }
-        // });
-    }
-
-
-
-    // $(function(){
-    //     $('[data-toggle="popover"]').popover({
-    //         html:true
-    //     });
-    // });
-});
-
-function  Course (name, description, difficulty, credits) {
-=======
                 courseName[i] = ui.item.data("name");
                 ranking[i] = ui.item.data("level");
                 i++;
@@ -219,15 +172,10 @@ function  Course (name, description, difficulty, credits) {
 });
 
 function  Course (name, description, difficulty, taken) {
->>>>>>> origin/master
     this.name = name;
     this.description = description;
     this.difficulty  = difficulty;
     this.taken = false;
-<<<<<<< HEAD
-    this.credits = credits;
-=======
->>>>>>> origin/master
     this.getInfo = function () {
         return this.name + ' ' + this.description +' '+ this.difficulty;
     };

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Freshmen Schedule </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link href="trumanScheduler.css" rel="stylesheet">
+
+    <style>
+        #div1, #div2 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+</head>
+<body>
+<div class="container">
+    <div class="col-md-3">
+        <h1 class="year" id="requirement"> Requirements </h1>
+    </div>
+
+
+    <div class="col-md-6">
+        <h1 class="year" id="mainSchedule" > Freshmen | CS major </h1>
+        <div id="droppable" class="ui-corner-all" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p> You can drop classes in here!!</p>
+
+
+        </div>
+    </div>
+
+    <div class="col-md-3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h1 class="year" id="available"> Available Classes </h1>
+        <br/>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            <!--<img src="img/test2.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="41">-->
+
+            <a href="#" draggable="true" ondragstart="drag(event)"> test 1 </a>
+        </div>
+
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    </div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/Course.js"></script>
+</body>
+</html>

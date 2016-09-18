@@ -26,7 +26,6 @@ li .ui-state-default .tooltip .tooltiptext {
     z-index: 1;
 }
 
-
 /*add empty space for viewing*/
 #empty {
     height: 190px;
@@ -49,11 +48,6 @@ li .ui-state-default .tooltip .tooltiptext {
 #available{
     background-color: cornsilk;
 }
-
-
-#ui-state-default {
-
-}
 .ui-state-default, .ui-state-highlight{
     border-radius: 5px;
 }
@@ -67,4 +61,5 @@ li .ui-state-default .tooltip .tooltiptext {
 #sortable1 li:hover{
     background: chartreuse;
     color: white;
+
 }
