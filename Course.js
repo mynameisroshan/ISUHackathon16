@@ -175,10 +175,11 @@ $(document).ready(function () {
 
 });
 
-function  Course (name, description, difficulty, taken) {
+function  Course (name, description, difficulty, taken, credit) {
     this.name = name;
     this.description = description;
     this.difficulty  = difficulty;
+    this.credit = credit;
     this.taken = false;
     this.getInfo = function () {
         return this.name + ' ' + this.description +' '+ this.difficulty;
