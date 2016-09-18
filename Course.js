@@ -114,6 +114,10 @@ $(document).ready(function () {
             }
             var options = {
                 title: 'Fall'
+                pieHole: 0.4,
+                'tooltip' : {
+  					text: 'percentage'
+				}
             };
 
             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
