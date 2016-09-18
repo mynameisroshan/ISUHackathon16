@@ -26,6 +26,10 @@ li .ui-state-default .tooltip .tooltiptext {
     z-index: 1;
 }
 
+li {
+    position: relative;
+}
+
 /*add empty space for viewing*/
 #empty {
     height: 190px;
@@ -33,7 +37,7 @@ li .ui-state-default .tooltip .tooltiptext {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
-
+/*increasse the length of course name*/
 /*the title */
 .year {
     text-align: center;
