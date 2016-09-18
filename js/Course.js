@@ -103,13 +103,11 @@ $(document).ready(function () {
 //                var n = ui.item.data("level");
 //                courseName[i] = ui.item.data("name");
 //                ranking[i] = ui.item.data("level");
-//                i++;
-//                count+=n;
-//                $("#totalScore").text(count);
-//                numberofCourse++;
-//                updateGraph();
-                
-                window.alert(ui.item);
+                i++;
+                count+=n;
+                $("#totalScore").text(count);
+                numberofCourse++;
+                updateGraph();
             }
         });
     }
