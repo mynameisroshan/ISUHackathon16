@@ -70,7 +70,7 @@
 
 
     <div class="col-md-6">
-        <h1 class="year" id="mainSchedule" > Sophomore | CS major </h1>
+        <h1 class="year" id="mainSchedule" > Junior | CS major </h1>
         <div id="droppable" class="ui-corner-all" ondrop="drop(event)" ondragover="allowDrop(event)">
             <h3> Suggested Classes </h3>
             <ul id="sortable2" class="connectedSortable">
@@ -83,7 +83,7 @@
                 <span> Difficulty Level: </span>
                 <span id="totalScore"> 20 </span>
             </h4>
-            <a href="sophomore.html" class="btn btn-danger"> Reset </a>
+            <a href="junior.html" class="btn btn-danger"> Reset </a>
             <br/>
             <p id="empty" style=" font-style: italic">
                 Drag the courses you want to take to your schedule.
@@ -96,15 +96,13 @@
             <!--Facebook comment-->
             <hr>
             <h2> Hear more from the experienced! </h2>
-            <div class="fb-comments" data-href="https://lendkhoa.github.io/ISUHackathon16/sophomore.html" data-numposts="5"></div>
+            <div class="fb-comments" data-href="https://lendkhoa.github.io/ISUHackathon16/junior.html" data-numposts="5"></div>
         </div>
     </div>
 
     <div class="col-md-3">
         <h1 class="year" id="available" > Available Classes </h1>
         <ul id="sortable1" class="connectedSortable">
-            <li class="ui-state-default" id="cs291"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25276"> CS 291 </a> </li>
-            <li class="ui-state-default" id="cs330"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25280"> CS 330 </a> </li>
             <li class="ui-state-default" id="cs345"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25281"> CS 345 </a> </li>
             <li class="ui-state-default" id="cs315"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25278"> CS 315 </a> </li>
             <li class="ui-state-default" id="cs325"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25279"> CS 325 </a> </li>
@@ -120,7 +118,7 @@
     </div>
 </div>
 
-<script type="text/javascript" src="js/Course2.js"></script>
+<script type="text/javascript" src="js/Course3.js"></script>
 
 </body>
 </html>
