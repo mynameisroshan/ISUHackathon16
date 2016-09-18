@@ -21,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="freshman.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="freshman.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/freshman.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1905">
@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trumanScheduler.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="trumanScheduler.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trumanScheduler.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+            <state relative-caret-position="222">
+              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -548,12 +548,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474166112484</updated>
-      <workItem from="1474166114237" duration="198000" />
+      <workItem from="1474166114237" duration="273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198000" />
+    <option name="totallyTimeSpent" value="273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="710" height="722" extended-state="0" />
@@ -601,6 +601,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/trumanScheduler.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/freshman.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
@@ -609,14 +617,6 @@
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trumanScheduler.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
