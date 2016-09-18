@@ -101,8 +101,6 @@
     <div class="col-md-3">
         <h1 class="year" id="available" > Available Classes </h1>
         <ul id="sortable1" class="connectedSortable">
-            <li class="ui-state-default" id="cs291"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25276"> CS 291 </a> </li>
-            <li class="ui-state-default" id="cs330"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25280"> CS 330 </a> </li>
             <li class="ui-state-default" id="cs345"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25281"> CS 345 </a> </li>
             <li class="ui-state-default" id="cs315"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25278"> CS 315 </a> </li>
             <li class="ui-state-default" id="cs325"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25279"> CS 325 </a> </li>
