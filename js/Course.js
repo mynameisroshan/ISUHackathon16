@@ -112,7 +112,7 @@ $(document).ready(function () {
                 data.addRow([''+courseName[s], ranking[s]]);
             }
             var options = {
-                title: 'Fall',
+                title: 'Effort proportion for each class',
                 pieHole: 0.4,
                 'tooltip' : {
   					text: 'percentage'
