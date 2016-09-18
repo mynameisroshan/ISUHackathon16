@@ -93,15 +93,13 @@ $(document).ready(function () {
                 // var order = $(this).data();
                 // alert($(event.relatedTarget)).data();
                 // var number = ui.item.index();
-//                for (j = 0; j <= courseCatalog.length; j++) {
-//                    console.log(ui.item);
-////                    if $(ui.item).attr('id') == courseCatalog[j].getName() {
-//                        var n = ui.courseCatalog[j].getDifficulty();
-//                        courseName[i] = ui.courseCatalog[j].getName();
-//                        ranking[i] = ui.courseCatalog[j].getDifficulty();
-//                    window.alert(n+ " "+  ui.courseCatalog[j].getName()+" "+ ui.courseCatalog[j].getDifficulty(); )
-//                    //}
-//                }
+                for (var j = 0; j <= courseCatalog.length; j++) {
+                    if (ui.item.attr('id') == courseCatalog[j].getName()) {
+                        var n = ui.courseCatalog[j].getDifficulty();
+                        courseName[i] = ui.courseCatalog[j].getName();
+                        ranking[i] = ui.courseCatalog[j].getDifficulty();
+                    }
+                }
 //                var n = ui.item.data("level");
 //                courseName[i] = ui.item.data("name");
 //                ranking[i] = ui.item.data("level");
@@ -111,7 +109,7 @@ $(document).ready(function () {
 //                numberofCourse++;
 //                updateGraph();
                 
-                var n = ui.
+                window.alert(ui.item);
             }
         });
     }
