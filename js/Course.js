@@ -24,8 +24,7 @@ $(document).ready(function () {
     numberofCourse = 2;
 
     //databases
-    $("#cs310").data("level", 10);
-    $("#cs310").data("name", 'CS 310');
+
 
     $("#cs170").data("level", 3);
     $("#cs170").data("name", 'CS 100');
@@ -50,6 +49,9 @@ $(document).ready(function () {
 
     $("#cs291").data("level", 6);
     $("#cs291").data("name", 'CS 291');
+
+    $("#cs310").data("level", 10);
+    $("#cs310").data("name", 'CS 310');
 
     $("#cs330").data("level", 8);
     $("#cs330").data("name", 'CS 330');
