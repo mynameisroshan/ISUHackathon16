@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19677818-ac33-472d-a5d8-1e1d8acf6bc2" name="Default" comment="" />
+    <list default="true" id="19677818-ac33-472d-a5d8-1e1d8acf6bc2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ISUHackathon16.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -559,12 +561,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474166112484</updated>
-      <workItem from="1474166114237" duration="799000" />
+      <workItem from="1474166114237" duration="647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="799000" />
+    <option name="totallyTimeSpent" value="647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="47" width="710" height="722" extended-state="0" />
