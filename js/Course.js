@@ -25,55 +25,55 @@ $(document).ready(function () {
 
     //databases
     $("#cs310").data("level", 10);
-    $("#cs310").data("name", 'cs310');
+    $("#cs310").data("name", 'CS 310');
 
     $("#cs170").data("level", 3);
-    $("#cs170").data("name", 'cs100');
+    $("#cs170").data("name", 'CS 100');
 
     $("#cs172").data("level", 3);
-    $("#cs172").data("name", 'cs172');
+    $("#cs172").data("name", 'CS 172');
 
     $("#cs180").data("level", 4);
-    $("#cs180").data("name", 'cs180');
+    $("#cs180").data("name", 'CS 180');
 
     $("#cs181").data("level", 5);
-    $("#cs181").data("name", 'cs181');
+    $("#cs181").data("name", 'CS 181');
 
     $("#cs191").data("level", 5);
-    $("#cs191").data("name", 'cs191');
+    $("#cs191").data("name", 'CS 191');
 
     $("#cs250").data("level", 5);
-    $("#cs250").data("name", 'cs250');
+    $("#cs250").data("name", 'CS 250');
 
     $("#cs260").data("level", 5);
-    $("#cs260").data("name", 'cs260');
+    $("#cs260").data("name", 'CS 260');
 
     $("#cs291").data("level", 6);
-    $("#cs291").data("name", 'cs291');
+    $("#cs291").data("name", 'CS 291');
 
     $("#cs330").data("level", 8);
-    $("#cs330").data("name", 'cs330');
+    $("#cs330").data("name", 'CS 330');
 
     $("#cs345").data("level", 6);
-    $("#cs345").data("name", 'cs345');
+    $("#cs345").data("name", 'CS 345');
 
     $("#cs315").data("level", 6);
-    $("#cs315").data("name", 'cs315');
+    $("#cs315").data("name", 'CS 315');
 
     $("#cs325").data("level", 7);
-    $("#cs325").data("name", 'cs325');
+    $("#cs325").data("name", 'CS 325');
 
     $("#cs370").data("level", 7);
-    $("#cs370").data("name", 'cs370');
+    $("#cs370").data("name", 'CS 370');
 
     $("#cs380").data("level", 8);
-    $("#cs380").data("name", 'cs380');
+    $("#cs380").data("name", 'CS 380');
 
     $("#cs420").data("level", 9);
-    $("#cs420").data("name", 'cs420');
+    $("#cs420").data("name", 'CS 420');
 
     $("#cs435").data("level", 9);
-    $("#cs435").data("name", 'cs435');
+    $("#cs435").data("name", 'CS 435');
 
     // add the required courses for freshmen
     var i = 0;
