@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="19677818-ac33-472d-a5d8-1e1d8acf6bc2" name="Default" comment="">
 <<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Course.js" afterPath="$PROJECT_DIR$/Course.js" />
@@ -8,6 +9,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 >>>>>>> Stashed changes
     </list>
+=======
+    <list default="true" id="19677818-ac33-472d-a5d8-1e1d8acf6bc2" name="Default" comment="" />
+>>>>>>> Stashed changes
     <ignored path="ISUHackathon16.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -611,16 +615,24 @@
       <updated>1474166112484</updated>
       <workItem from="1474166114237" duration="799000" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <workItem from="1474170711594" duration="196000" />
 =======
       <workItem from="1474170817659" duration="97000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1474170711594" duration="303000" />
 >>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="995000" />
+=======
+    <option name="totallyTimeSpent" value="1102000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="25" width="923" height="722" extended-state="0" />
