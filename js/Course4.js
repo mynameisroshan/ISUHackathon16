@@ -67,6 +67,9 @@ $(document).ready(function () {
     $("#cs380").data("level", 8);
     $("#cs380").data("name", 'CS 380');
 
+	$("#cs435").data("level", 8);
+    $("#cs435").data("name", 'CS 390');
+	
     $("#cs420").data("level", 9);
     $("#cs420").data("name", 'CS 420');
 
