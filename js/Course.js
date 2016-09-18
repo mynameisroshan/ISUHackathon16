@@ -98,7 +98,7 @@ $(document).ready(function () {
 
     function updateGraph() {
 
-        if (numberofCourse == 7) window.alert("Reach maximum number of classes per semester");
+        if (numberofCourse == 7) window.alert("You've reached the maximum number of classes per semester.");
         google.charts.load('current', {
             'packages': ['corechart']
         });
