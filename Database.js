@@ -1,33 +1,3 @@
-//This is a sample Course class
-
-function Course (name, description, difficulty, credit) {
-    this.name = name;
-    this.description = description;
-    this.difficulty = difficulty;
-    this.credit = credit;
-    this.taken = false;
-    //this.prerequisites = [];
-}
-
-Course.prototype = {
-    constructor: Course,
-    getName:function ()  {
-        return this.name;
-    },
-    getDifficulty:function ()  {
-        return this.difficulty;
-    },
-    getTaken:function ()  {
-        return this.taken;
-    },
-	setTaken:function (newTaken) {
-		this.taken = newTaken;
-	},
-	setPrerequisites:function (oldCourse) {
-		this.prerequisites = oldCourse;
-	}
-};
-
 var courseCatalog = [
 	new Course ("CS 100: Computer Science Seminar", "Orientation to the University experience and the computer science program. An overview of computer science and the history of computing.", 1, 1),
 	new Course ("CS 170: Introduction to Computer Science I", "Introduction to key ideas of computing and programming. Basic concepts, variables, functions, loops, algorithms, data types, graphics. Brief introduction to computing ideas such as data representation, hardware, operating systems, information systems, artificial intelligence, networks, and the world wide web. ", 4, 4),
@@ -84,30 +54,3 @@ var courseCatalog = [
 	new Course ("POL 171: Introduction to Political Science", "An overview of basic concepts, principles, approaches and methods of the discipline representing the social scientific mode of inquiry. Exposes the student to national, comparative, and international politics as well as political thought.", 4, 3),
 	new Course ("PSYC 166: General Psychology", "A survey of behavioral principles. Topics include human development, personality, learning and thinking, psychological testing, mental health, therapy, and social behavior.", 5, 3)
 ];
-
-//for (i = 0; i < courseList; i++) { 
-    //switch (courseList[i].getName.substring(0,6)) {
-    //case "CS 181":
-	//case "CS 191":
-        
-        //break;
-    //case "CS 250":
-	//case "CS 260":
-		
-        //break;
-    //case "CS 310":
-        
-        //break;
-    //case 3:
-        //day = "Wednesday";
-        //break;
-    //case 4:
-        //day = "Thursday";
-        //break;
-    //case 5:
-        //day = "Friday";
-        //break;
-    //case 6:
-        //day = "Saturday";
-	//}
-//}
