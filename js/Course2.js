@@ -1,7 +1,7 @@
 /**
  * Created by khoale on 9/17/16.
  */
-// this is the Course Selection for Freshmen CS major
+// this is the Course Selection for Sophomore CS major
 
 $(document).ready(function () {
     var CS100 = new Course('CS100', 'easy', 1, false);

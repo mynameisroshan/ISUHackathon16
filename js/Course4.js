@@ -1,13 +1,13 @@
 /**
  * Created by khoale on 9/17/16.
  */
-// this is the Course Selection for senior CS major
+// this is the Course Selection for Senior CS major
 
 $(document).ready(function () {
     var CS100 = new Course('CS100', 'easy', 1, false);
     var CS310 = new Course('CS310', 'Challenging', 8, false);
 
-    var seniorFall = [
+    var freshmanFall = [
         ['Class', 'Difficulty'], ['CS 495', 5]
     ];
 
@@ -105,7 +105,7 @@ $(document).ready(function () {
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            var data = google.visualization.arrayToDataTable(seniorFall);
+            var data = google.visualization.arrayToDataTable(freshmanFall);
             for(s = 0; s < ranking.length; s++){
                 data.addRow([''+courseName[s], ranking[s]]);
             }

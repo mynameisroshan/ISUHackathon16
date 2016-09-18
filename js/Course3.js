@@ -7,20 +7,22 @@ $(document).ready(function () {
     var CS100 = new Course('CS100', 'easy', 1, false);
     var CS310 = new Course('CS310', 'Challenging', 8, false);
 
-    var juniorFall = [
-        ['Class', 'Difficulty'], ['CS 345', 6]
+    var freshmanFall = [
+        ['Class', 'Difficulty'], ['CS 250', 5], ['CS 260', 5], ['CS 310', 10]
     ];
 
-    var count = 6;
+    var count = 20;
     var ranking = new Array(0);
     var courseName = new Array(0);
     var numberofCourse;
     var courseCatalog = new Array(0);
-    courseCatalog.push(CS345);
-    numberofCourse = 1;
+    courseCatalog.push(CS100);
+    courseCatalog.push(CS310);
+    numberofCourse = 3;
 
     //databases
-
+    $("#cs310").data("level", 10);
+    $("#cs310").data("name", 'CS 310');
 
     $("#cs170").data("level", 3);
     $("#cs170").data("name", 'CS 100');
@@ -45,9 +47,6 @@ $(document).ready(function () {
 
     $("#cs291").data("level", 6);
     $("#cs291").data("name", 'CS 291');
-
-    $("#cs310").data("level", 10);
-    $("#cs310").data("name", 'CS 310');
 
     $("#cs330").data("level", 8);
     $("#cs330").data("name", 'CS 330');
@@ -97,7 +96,7 @@ $(document).ready(function () {
 
     function updateGraph() {
 
-        if (numberofCourse == 7) window.alert("You've reached the maximum number of classes per semester.");
+        if (numberofCourse == 7) window.alert("Reach maximum number of classes per semester");
         google.charts.load('current', {
             'packages': ['corechart']
         });
@@ -105,7 +104,7 @@ $(document).ready(function () {
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            var data = google.visualization.arrayToDataTable(juniorFall);
+            var data = google.visualization.arrayToDataTable(freshmanFall);
             for(s = 0; s < ranking.length; s++){
                 data.addRow([''+courseName[s], ranking[s]]);
             }
@@ -113,8 +112,8 @@ $(document).ready(function () {
                 title: 'Effort proportion for each class',
                 pieHole: 0.4,
                 'tooltip' : {
-  					text: 'percentage'
-				}
+                    text: 'percentage'
+                }
             };
 
             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -124,48 +123,40 @@ $(document).ready(function () {
     }
 
 
-   function printArray() {
-       window.alert(courseName.toString());
-       window.alert(ranking.toString());
-   }
+    function printArray() {
+        window.alert(courseName.toString());
+        window.alert(ranking.toString());
+    }
 
-  $("#maxGPA").click(function () {
-      document.getElementById("cs330").style.display="none";
-      document.getElementById("cs310").style.display="none";
-      document.getElementById("cs345").style.display="none";
-      document.getElementById("cs315").style.display="none";
-      document.getElementById("cs325").style.display="none";
-      document.getElementById("cs370").style.display="none";
-      document.getElementById("cs380").style.display="none";
-      document.getElementById("cs420").style.display="none";
-      document.getElementById("cs435").style.display="none";
-      document.getElementById("cs390").style.display="none";
-  });
+    $("#maxGPA").click(function () {
+        document.getElementById("cs330").style.display="none";
+        document.getElementById("cs345").style.display="none";
+        document.getElementById("cs325").style.display="none";
+        document.getElementById("cs370").style.display="none";
+        document.getElementById("cs380").style.display="none";
+        document.getElementById("cs420").style.display="none";
+        document.getElementById("cs390").style.display="none";
+    });
 
     $("#even").click(function () {
-      document.getElementById("cs330").style.display="none";
-      document.getElementById("cs310").style.display="none";
-      document.getElementById("cs345").style.display="none";
-      document.getElementById("cs315").style.display="none";
-      document.getElementById("cs325").style.display="none";
-      document.getElementById("cs370").style.display="none";
-      document.getElementById("cs380").style.display="none";
-      document.getElementById("cs420").style.display="none";
-      document.getElementById("cs435").style.display="none";
-      document.getElementById("cs390").style.display="none";
+        document.getElementById("cs330").style.display="none";
+        document.getElementById("cs345").style.display="none";
+        document.getElementById("cs315").style.display="none";
+        document.getElementById("cs325").style.display="none";
+        document.getElementById("cs370").style.display="none";
+        document.getElementById("cs380").style.display="none";
+        document.getElementById("cs420").style.display="none";
+        document.getElementById("cs435").style.display="none";
+        document.getElementById("cs390").style.display="none";
     });
 
     $("#einstein").click(function () {
-      document.getElementById("cs330").style.display="none";
-      document.getElementById("cs310").style.display="none";
-      document.getElementById("cs345").style.display="none";
-      document.getElementById("cs315").style.display="none";
-      document.getElementById("cs325").style.display="none";
-      document.getElementById("cs370").style.display="none";
-      document.getElementById("cs380").style.display="none";
-      document.getElementById("cs420").style.display="none";
-      document.getElementById("cs435").style.display="none";
-      document.getElementById("cs390").style.display="none";
+        document.getElementById("cs170").style.display="none";
+        document.getElementById("cs172").style.display="none";
+        document.getElementById("cs180").style.display="none";
+        document.getElementById("cs181").style.display="none";
+        document.getElementById("cs191").style.display="none";
+        document.getElementById("cs291").style.display="none";
     });
 
 
@@ -187,4 +178,6 @@ function  Course (name, description, difficulty, taken, credit) {
     this.getDescription = function () {
         return this.description;
     };
-}
+}/**
+ * Created by khoale on 9/18/16.
+ */
