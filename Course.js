@@ -10,7 +10,6 @@ $(document).ready(function () {
     var freshmanFall = [
         ['Class', 'Difficulty'], ['CS 100', 1], ['MATH 198', 4]
     ];
-
     var freshmanSpring = [
         ['Class', 'Difficulty']
     ];
@@ -113,7 +112,7 @@ $(document).ready(function () {
                 data.addRow([''+courseName[s], ranking[s]]);
             }
             var options = {
-                title: 'Fall'
+                title: 'Fall',
                 pieHole: 0.4,
                 'tooltip' : {
   					text: 'percentage'
