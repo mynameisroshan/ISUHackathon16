@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freshmen Schedule</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="trumanScheduler.css" rel="stylesheet">
+    <style>
+        #sortable1, #sortable2 {
+            width: 142px;
+            min-height: 20px;
+            list-style-type: none;
+            margin: 0;
+            padding: 5px 0 0 0;
+            float: left;
+            margin-right: 10px;
+        }
+        #sortable1 li, #sortable2 li {
+            margin: 0 5px 5px 5px;
+            padding: 5px;
+            font-size: 1.2em;
+            width: 120px;
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--<script type="text/javascript" src="pie%20chart/PieChart.js"> </script>-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $( "#sortable1" ).sortable({
+                connectWith: "#sortable2"
+            })
+            $( "#sortable2" ).sortable({
+            })
+        });
+
+    </script>
+</head>
+<body>
+
+<!--facebook comment plugin-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1738190899770138";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div class="container">
+    <div class="col-md-3">
+        <h1 class="year" id="requirement"> I feel like... </h1>
+        <a id="einstein" class="btn btn-warning"> Einstein Mode </a>
+        <br/>
+        <br/>
+        <a id="even" class="btn btn-warning"> Even Distribution </a>
+        <br/>
+        <br/>
+        <a id="maxGPA" class="btn btn-warning"> Max GPA </a>
+
+    </div>
+
+
+    <div class="col-md-6">
+        <h1 class="year" id="mainSchedule" > Freshmen | CS major </h1>
+        <div id="droppable" class="ui-corner-all" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h3> Suggested Classes </h3>
+            <ul id="sortable2" class="connectedSortable">
+                <li align = center class="ui-state-highlight"> CS 100 </li>
+                <li align = center class="ui-state-highlight"> MATH 198 </li>
+            </ul>
+            <hr>
+            <h4>
+                <span> Difficulty Level: </span>
+                <span id="totalScore"> 7 </span>
+            </h4>
+            <a href="freshman.html" class="btn btn-danger"> Reset </a>
+            <br/>
+            <p id="empty" style=" font-style: italic">
+                Drag the courses you want to take to your schedule
+            </p>
+            <p id="analysis"></p>
+
+            <!--report on hours with chart-->
+            <div id="piechart" style="height: 400px;"></div>
+
+            <!--Facebook comment-->
+            <hr>
+            <h2> Hear more from the experienced! </h2>
+            <div class="fb-comments" data-href="https://github.com/mynameisroshan/classplanner/blob/master/Freshmen2.html" data-width="70" data-numposts="5"></div>
+
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <h1 class="year" id="available" > Available Classes </h1>
+        <ul id="sortable1" class="connectedSortable">
+            <li class="ui-state-default" id="cs170"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=10&coid=21065"> CS 170 </a> </li>
+            <li class="ui-state-default" id="cs172"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25267"> CS 172 </a> </li>
+            <li class="ui-state-default" id="cs180"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25268"> CS 180 </a> </li>
+            <li class="ui-state-default" id="cs181"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25269"> CS 181 </a> </li>
+            <li class="ui-state-default" id="cs191"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25270"> CS 191 </a> </li>
+            <li class="ui-state-default" id="cs250"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25271"> CS 250 </a> </li>
+            <li class="ui-state-default" id="cs260"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25272"> CS 260 </a> </li>
+            <li class="ui-state-default" id="cs291"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25276"> CS 291 </a> </li>
+            <li class="ui-state-default" id="cs310"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25277"> CS 310 </a> </li>
+            <li class="ui-state-default" id="cs330"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25280"> CS 330 </a> </li>
+            <li class="ui-state-default" id="cs345"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25281"> CS 345 </a> </li>
+            <li class="ui-state-default" id="cs315"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25278"> CS 315 </a> </li>
+            <li class="ui-state-default" id="cs325"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25279"> CS 325 </a> </li>
+            <li class="ui-state-default" id="cs370"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25283"> CS 370 </a> </li>
+            <li class="ui-state-default" id="cs380"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25284"> CS 380 </a> </li>
+            <li class="ui-state-default" id="cs390"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25285"> CS 390 </a> </li>
+            <li class="ui-state-default" id="cs420"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25286"> CS 420 </a> </li>
+            <li class="ui-state-default" id="cs435"><a href = "http://catalog.truman.edu/preview_course_nopop.php?catoid=12&coid=25288"> CS 435 </a> </li>
+        </ul>
+
+        <div id="testArea"></div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="js/Course.js"></script>
+
+</body>
+</html>
