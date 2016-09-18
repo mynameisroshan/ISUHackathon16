@@ -8,23 +8,6 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link href="trumanScheduler.css" rel="stylesheet">
-    <style>
-        #sortable1, #sortable2 {
-            width: 142px;
-            min-height: 20px;
-            list-style-type: none;
-            margin: 0;
-            padding: 5px 0 0 0;
-            float: left;
-            margin-right: 10px;
-        }
-        #sortable1 li, #sortable2 li {
-            margin: 0 5px 5px 5px;
-            padding: 5px;
-            font-size: 1.2em;
-            width: 120px;
-        }
-    </style>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!--<script type="text/javascript" src="pie%20chart/PieChart.js"> </script>-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -54,17 +37,15 @@
 
 <div class="container">
     <div class="col-md-3">
-        <h1 class="year" id="requirement"> I feel like... </h1>
+        <h3 class="year" id="requirement"> I feel like...</h3>
         <span title = "Perfect for math and science enthusiasts. Challenge yourself with tough classes.">
-            <a id="einstein" class="btn btn-warning"> Einstein Mode </a></span>
-        <br/>
-        <br/>
-        <span title = "Have a balanced work-life semester with manageable courses.">
-            <a id="even" class="btn btn-warning"> Even Distribution </a> </span>
-        <br/>
-        <br/>
+            <div align = "center" > <a id="einstein" class="btn btn-warning">  Einstein Mode </a> </div> </span>
+            <br>
+            <span title = "Have a balanced work-life semester with manageable courses.">
+             <div align = "center" > <a id="even" class="btn btn-warning"> Even Distribution </a> </div> </span>
+            <br>
         <span title = "Regain your confidence with these simple courses.">
-        <a id="maxGPA" class="btn btn-warning"> Max GPA </a> </span>
+        <div align = "center" >  <a id="maxGPA" class="btn btn-warning"> Max GPA </a> </div> </span>
 
     </div>
 
@@ -103,7 +84,8 @@
     <div class="col-md-3">
         <h1 class="year" id="available" > Available Classes </h1>
         <ul id="sortable1" class="connectedSortable">
-            <li class="ui-state-default" id="cs330"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25280"> CS 330 </a> </li>
+            <li class="ui-state-default" id="cs310"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25277"> CS 310 </a> </li>
+			<li class="ui-state-default" id="cs330"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25280"> CS 330 </a> </li>
             <li class="ui-state-default" id="cs345"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25281"> CS 345 </a> </li>
             <li class="ui-state-default" id="cs315"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25278"> CS 315 </a> </li>
             <li class="ui-state-default" id="cs325"><a href = "http://catalog.truman.edu/preview_course.php?catoid=12&coid=25279"> CS 325 </a> </li>

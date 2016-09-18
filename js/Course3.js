@@ -1,24 +1,24 @@
 /**
  * Created by khoale on 9/17/16.
  */
-// this is the Course Selection for Sophomore CS major
+// this is the Course Selection for Junior CS major
 
 $(document).ready(function () {
     var CS100 = new Course('CS100', 'easy', 1, false);
     var CS310 = new Course('CS310', 'Challenging', 8, false);
 
     var freshmanFall = [
-        ['Class', 'Difficulty'], ['CS 250', 5], ['CS 260', 5], ['CS 291', 6]
+        ['Class', 'Difficulty'], ['CS 345', 6]
     ];
 
-    var count = 16;
+    var count = 6;
     var ranking = new Array(0);
     var courseName = new Array(0);
     var numberofCourse;
     var courseCatalog = new Array(0);
     courseCatalog.push(CS100);
     courseCatalog.push(CS310);
-    numberofCourse = 3;
+    numberofCourse = 1;
 
     //databases
     $("#cs310").data("level", 10);
@@ -65,6 +65,9 @@ $(document).ready(function () {
 
     $("#cs380").data("level", 8);
     $("#cs380").data("name", 'CS 380');
+	
+	$("#cs435").data("level", 8);
+    $("#cs435").data("name", 'CS 390');
 
     $("#cs420").data("level", 9);
     $("#cs420").data("name", 'CS 420');
