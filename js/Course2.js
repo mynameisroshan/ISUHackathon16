@@ -8,10 +8,10 @@ $(document).ready(function () {
     var CS310 = new Course('CS310', 'Challenging', 8, false);
 
     var freshmanFall = [
-        ['Class', 'Difficulty'], ['CS 250', 5], ['CS 260', 5], ['CS 310', 10]
+        ['Class', 'Difficulty'], ['CS 250', 5], ['CS 260', 5], ['CS 291', 6]
     ];
 
-    var count = 20;
+    var count = 16;
     var ranking = new Array(0);
     var courseName = new Array(0);
     var numberofCourse;

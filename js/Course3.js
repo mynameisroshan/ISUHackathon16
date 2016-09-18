@@ -8,17 +8,17 @@ $(document).ready(function () {
     var CS310 = new Course('CS310', 'Challenging', 8, false);
 
     var freshmanFall = [
-        ['Class', 'Difficulty'], ['CS 250', 5], ['CS 260', 5], ['CS 310', 10]
+        ['Class', 'Difficulty'], ['CS 345', 6]
     ];
 
-    var count = 20;
+    var count = 6;
     var ranking = new Array(0);
     var courseName = new Array(0);
     var numberofCourse;
     var courseCatalog = new Array(0);
     courseCatalog.push(CS100);
     courseCatalog.push(CS310);
-    numberofCourse = 3;
+    numberofCourse = 1;
 
     //databases
     $("#cs310").data("level", 10);
