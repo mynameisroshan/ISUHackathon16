@@ -1,1 +1,2 @@
-# classplanner
+# semesterplanner
+# HackISU 2016
